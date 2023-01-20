@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Cabin+Condensed&family=Catamaran:wght@100&family=Courgette&family=Fira+Sans&family=Fredoka+One&family=Inter:wght@300&family=Leckerli+One&family=Montez&family=Pacifico&family=Philosopher&family=Poppins&family=Roboto+Condensed&family=Roboto:ital@0;1&family=Rubik&family=Signika+Negative:wght@300&family=Source+Sans+Pro&family=Ubuntu:wght@300;400&family=Varela+Round&family=Yanone+Kaffeesatz&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.body{
+    background-color: rgb(248, 250, 255);
+}
+
+.navigate{
+    padding-top: 1rem;
+}
+
+.navigate a{
+    text-decoration: none;
+    padding-left: 2rem;
+    color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.cards {
+    background-color: white;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    border: 1px solid rgb(214, 218, 228);
+    border-radius: .5rem;
+}
+
+
+.cardsline {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    background-color: white;
+}
+
+.cardsline2 {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    background-color: white;
+}
+
+.cardfirst {
+    padding: .8rem 2.3rem;
+    border-radius: .5rem;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0px 0px 30px -14px black;
+}
+
+.cardfirst img {
+    width: 6rem;
+}
+
+.ItemName {
+    padding-top: 1.2rem;
+}
+
+.btn {
+    border: 1px solid rgb(238, 55, 55);
+    background-color: transparent;
+    padding: .3rem 2rem;
+    border-radius: .1rem;
+    margin-top: 1rem;
+    color: rgb(238, 55, 55);
+}
+
+.btn:hover {
+    background-color: rgb(238, 55, 55);
+    color: white;
+}
+
+/* ====================== css for Payment card =================== */
+.payments{
+    display: none;
+}
+
+.startPay {
+    margin-left: 2rem;
+    background-color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 2rem;
+    padding-left: 1rem;
+    border: 1px solid rgb(214, 218, 228);
+    border-radius: .3rem;
+}
+
+.paymentItems {
+    font-size: .8rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.paymentItem {
+    font-size: .8rem;
+}
+
+.paymentItemfirst {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: rgb(121, 121, 121);
+    font-size: .8rem;
+    border-top: 1px solid rgb(207, 206, 206);
+    border-bottom: 1px solid rgb(207, 206, 206);
+    padding: .8rem;
+    gap: 1.5rem;
+}
+
+.paymentItemsecond {
+    padding-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    font-size: .75rem;
+    border-bottom: 1px solid rgb(207, 206, 206);
+}
+
+.paymentItemsecond .right {
+    padding-top: .8rem;
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 1rem;
+}
+
+.paymentItemThird {
+    padding-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.paymentItemThird div {
+    padding-top: .3rem;
+}
+
+.paymentItemThird .pay {
+    font-size: .6rem;
+}
+
+.button {
+    text-align: center;
+}
+
+.btn2 {
+    background-color: rgb(238, 55, 55);
+    padding: .6rem 4rem;
+    border-radius: .1rem;
+    margin-top: 1rem;
+    color: white;
+    border: 1px solid rgb(238, 55, 55);
+}
+
+/* ================= css footer ============ */
+
+.footer {
+    position: fixed;
+    left: 0;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+    bottom: 0;
+    width: 100%;
+    font-size: .7rem;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+/* =========================== order details css  ===================== */
+
+.rout {
+    padding-top: 1rem;
+    text-align: end;
+    padding-right: 1rem;
+
+}
+
+.rout a {
+    text-decoration: none;
+}
+
+
+/* ====================== media ============= */
+
+@media screen and (max-width:1100px) {
+    .cardsline {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cardsline2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .cardsline {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .cardsline2 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+@media screen and (max-width:650px) {
+    .startPay {
+        margin-left: .5rem;
+        padding-right: 1rem;
+    }
+
+    .cards {
+        padding-right: .5rem;
+        padding-left: .5rem;
+    }
+
+    .btn2 {
+        padding: .6rem 3.3rem;
+        font-size: .8rem;
+        border-radius: .1rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .payment {
+        display: none;
+    }
+    .payments{
+        margin-top: 2rem;
+        display: block;
+    }
+
+    .cards {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .navigate a{
+        padding-left: 1rem;
+    }
+
+}
